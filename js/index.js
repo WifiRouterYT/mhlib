@@ -1,0 +1,20 @@
+var menu = document.getElementById('nav');
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+var collapsestate = 0;
+async function togglemenu() {
+    if(collapsestate === 0) {
+        menu.style.width = "230px";
+        collapsestate = 1;
+    } else {
+        menu.style.width = "52px";
+        collapsestate = 0;
+    }
+}
+
+document.getElementById('menutoggle').onclick = function() {
+    togglemenu();
+}

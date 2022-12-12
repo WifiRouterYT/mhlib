@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(1, 4, 9);
+}
+
+.nav {
+    position: fixed;
+    background-color: rgb(13, 17, 23);
+    border-radius: 15px;
+    height: calc(100vh - 20px);
+    width: 52px;
+    margin: 8px 8px 8px 8px;
+    border: 2px solid;
+    top: 0;
+    z-index: 1;
+    border-color: rgb(22, 27, 34);
+    transition: all .5s ease-in-out;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.nav::after {
+    clear: both;
+}
+
+.nav:hover {
+    border-color: rgb(30, 51, 76);
+}
+
+.nav .icons {
+    display: block;
+}
+
+.nav .menutoggle {
+    display: block;
+}
+
+.navicon {
+    position: static;
+    display: block;
+    background-color: transparent;
+    border: 0;
+    font-size: 26px;
+    cursor: pointer;
+    margin-top: 4px;
+    margin-left: 4px;
+    height: 42px;
+    min-width: 42px;
+    max-width: 223px;
+    border-radius: 8px;
+    transition: .2s ease-in-out;
+    margin-right: 4px;
+    display: flex;
+    overflow: hidden;
+    
+}
+
+.navicon::after {
+    clear: both;
+    display:inline-block;
+}
+
+.navicon button {
+    margin-left: 9px;
+    background-color: transparent;
+    border: 0;
+    font-size: 22px;
+    cursor: pointer;
+    margin-top: 0px;
+}
+
+.navicon p {
+    margin-left: 12px;
+    margin-top: 10px;
+    font-family: fixedsys;
+    font-size: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.navicon:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
+.divider {
+    height: 24px;
+    width: 1px;
+    background-color: transparent;
+    border: 0;
+}
