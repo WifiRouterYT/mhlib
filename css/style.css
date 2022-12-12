@@ -25,7 +25,8 @@ body {
     border-color: rgb(22, 27, 34);
     transition: all .5s ease-in-out;
     font-size: 18px;
-    overflow: hidden;
+    overflow-x:hidden;
+    overflow-y: auto;
 }
 
 .nav::after {
