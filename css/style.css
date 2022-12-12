@@ -98,3 +98,7 @@ body {
     background-color: transparent;
     border: 0;
 }
+
+.selected {
+    background-color: rgb(30, 51, 76);
+}
