@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 
 * {
     color: white;
@@ -101,4 +102,60 @@ body {
 
 .selected {
     background-color: rgb(30, 51, 76);
+}
+
+.homeheader {
+    height: 100vh;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+    font-size: 3.5vh;
+    flex-direction: column;
+}
+
+.main {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(fit-content + 25px);
+    margin-bottom: 25px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.main * {
+    margin-left: 68px;
+    margin-right: 68px;
+}
+
+.footer {
+    height: calc(fit-content + 25px);
+    margin-top: 25px;
+    background-color: #161b22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 16px;
+}
+
+.footer * {
+    margin-left: 68px;
+    margin-right: 68px;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .homeheader {
+      background-attachment: scroll;
+    }
 }
