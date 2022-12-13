@@ -19,6 +19,14 @@ document.getElementById('menutoggle').onclick = function() {
     togglemenu();
 }
 
+document.getElementById('home').onclick = function() {
+    window.location.replace("/mhlib/");
+}
+
 document.getElementById('mhhomepage').onclick = function() {
     window.open("https://sccsmissionhill.ss8.sharpschool.com", '_blank');
+}
+
+document.getElementById('opals').onclick = function() {
+    window.location.replace("/mhlib/opals/");
 }

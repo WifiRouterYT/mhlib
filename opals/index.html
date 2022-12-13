@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>MHLib</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="https://unpkg.com/fixedsys-css/css/fixedsys.css">
         <script src="https://kit.fontawesome.com/b2ec349ebe.js" crossorigin="anonymous"></script>
     </head>
@@ -13,7 +13,7 @@
                 <p>Collapse Menu</p>
             </div>
             <div class="divider"></div>
-            <div id="home" class="navicon selected" style="position: static;" title="Home">
+            <div id="home" class="navicon" style="position: static;" title="Home">
                 <button><i class="fa-solid fa-house-chimney"></i></button>
                 <p>Home</p>
             </div>
@@ -21,7 +21,7 @@
                 <button><i class="fa-solid fa-school" style="margin-left: -0.5px;"></i></button>
                 <p>MH Home Page</p>
             </div>
-            <div id="opals" class="navicon" style="position: static;" title="Search for a book">
+            <div id="opals" class="navicon selected" style="position: static;" title="Search for a book">
                 <button style="margin-left: 10px;"><i class="fa-solid fa-magnifying-glass" style="margin-left: 1px;"></i></button>
                 <p>OPALS</p>
             </div>
@@ -59,32 +59,28 @@
             </div>
         </div>
         <div class="content">
-            <div class="homeheader" style='background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),url("img/main-header-bg.jpg");'>
-                <p style="color: #fff2cc;">MISSION HILL MIDDLE LIBRARY</p>
-                <div class="divider"></div>
-                <p>425 KING STREET</p>
-                <p>2ND FLOOR</p>
-                <p>SANTA CRUZ, CA 95060</p>
-                <div class="divider"></div><div class="divider"></div>
-                <p style="color: #ff9900;">HOURS</p>
-                <p style="font-size: 3.2vh">MONDAY 8:00 - 3:30</p>
-                <p style="font-size: 3.2vh">TUESDAY 8:00 - 3:30</p>
-                <p style="font-size: 3.2vh">WEDNESDAY 8:00 - 3:30</p>
-                <p style="font-size: 3.2vh">THURSDAY 8:00 - 3:30</p>
-                <p style="font-size: 3.2vh">FRIDAY 8:00 - 3:30</p>
-            </div>
             <div class="main">
-                <p style="color: #0087ca;font-size: 3.0vh; font-weight: bolder;">ABOUT MH LIBRARY</p>
-                <p>At the library students, staff, and families are welcome to utilize our library services, from checking out novels and textbooks to researching, writing, printing, and getting homework help. We even have vending machines for pens & pencils.</p>
+                <center style="color: #fff2cc; font-size: 48px; font-weight: bold; font-family: 'Hammersmith One', sans-serif;">SEARCH FOR A BOOK</center>
+                <p style="color: rgb(200, 200, 200);">Visit our library catalog, OPALS, to search for a book!</p>
                 <br>
-                <p style="color: #0087ca; font-weight: bold;">Using their 5-digit student ID #, students can check out up to two books for up to three weeks.</p>
-                <p style="color: rgb(200, 200, 200); font-size: 15px;">Students can also renew their book(s) one time for an additional 3 weeks when needed.</p>
+                <a href="https://mhms.sccs.opalsinfo.net/bin/home" target="_blank"><button class="link">Visit the OPALS search page<i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+                <hr>
+                <center style="color: #fff2cc; font-size: 48px; font-weight: bold; font-family: 'Hammersmith One', sans-serif;">OPALS LOG IN</center>
+                <p style="color: rgb(200, 200, 200);">Logging into OPALS allows you to see your checked-out book due dates, renew your books, and request/reserve a book at the Mission Hill Middle Library.</p>
+                <div class="infobox">
+                    <div class="title">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Info
+                    </div>
+                    <div class="divider" style="margin-top: -5px;"></div>
+                    <p>All you need is your 5 digit Student ID</p>
+                    <p style="color: #ff6a6a">No password required!</p>
+                    <br>
+                </div>
                 <br>
-                <p>We are open <strong style="margin: 0; color: #03a1c9;">Monday through Friday</strong> before school, during class periods & READ period with a hall pass, at lunch, and after school. </p>
-                <br>
-                <p><strong style="margin: 0; color: #03a1c9; margin-left: 5px;">LUNCHES IN THE LIBRARY: </strong>After students eat lunch in the designated areas outside on the blacktop they may visit the library for the remainder of lunch.  Lunches in the library allow students to play games, read, create, and socialize with others in a safe, comfortable, and inclusive environment.</p>
-                <br>
-                <p style="color: #0087ca; font-weight: bolder; font-size: 2.5vh;">ALL ARE WELCOME!</p>
+                <a href="https://mhms.sccs.opalsinfo.net/bin/home" target="_blank"><button class="link">Visit the OPALS log-in page<i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+                <hr>
+                <center style="color: #fff2cc; font-size: 48px; font-weight: bold; font-family: 'Hammersmith One', sans-serif;">Find a Book/Lexile/Reading Counts</center>
             </div>
             <div class="footer">
                 <br>
@@ -93,6 +89,6 @@
                 <br>
             </div>
         </div>
-        <script src="js/index.js"></script>
+        <script src="../js/index.js"></script>
     </body>
 </html>

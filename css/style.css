@@ -130,7 +130,7 @@ body {
     margin-bottom: 25px;
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    width: 90%;
+    width: calc(100% - 68px);
     margin-left: 68px;
 }
 
@@ -149,6 +149,19 @@ body {
     flex-direction: column;
     font-family: 'Hammersmith One', sans-serif;
     font-size: 16px;
+    width: calc(100% - 84px);
+    float: right;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 2px solid;
+    border-color: #323841;
+    transition: .3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.footer:hover {
+    border-color: rgb(30, 51, 76);
 }
 
 .footer * {
@@ -156,8 +169,83 @@ body {
     margin-right: 68px;
 }
 
+.link {
+    margin-top: 10px;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    height: 28px;
+    width: 300px;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    background-color: transparent;
+    transform: scale(1.2);
+    border: 2px solid;
+    border-color: #FFFF;
+}
+
+.link * {
+    margin-left: 12px;
+    margin-right: 0;
+}
+
+.link:hover {
+    transition: all .3s ease-in-out;
+    background-color: #FFFFFF;
+    color: #010409;
+}
+
+.link:hover * {
+    transition: all .3s ease-in-out;
+    color: #010409;
+}
+
 @media only screen and (max-device-width: 1366px) {
     .homeheader {
       background-attachment: scroll;
     }
+}
+
+hr {
+    display: block;
+    margin-top: 24px;;
+    margin-bottom: 24px;;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 95%;
+    border-radius: 12px;
+    border: 2px solid;
+    color: #323841;
+}
+
+.infobox {
+    border: 3px solid;
+    border-color: #0087ca;
+    border-radius: 12px;
+    margin-top: 24px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.infobox .title {
+    background-color: #0087ca;
+    font-family: 'Exo', sans-serif;
+    border-radius: 8px;
+    width: 100px;
+    height: 24px;
+    margin-top: -11px;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infobox .title * {
+    margin: 0;
+    margin-right: 5px;
 }
