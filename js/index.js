@@ -18,3 +18,7 @@ async function togglemenu() {
 document.getElementById('menutoggle').onclick = function() {
     togglemenu();
 }
+
+document.getElementById('mhhomepage').onclick = function() {
+    window.open("https://sccsmissionhill.ss8.sharpschool.com", '_blank');
+}
