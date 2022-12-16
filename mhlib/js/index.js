@@ -36,6 +36,10 @@ document.getElementById('opals').onclick = function() {
     window.location = "/mhlib/opals";
 }
 
+document.getElementById('onlinebooks').onclick = function() {
+    window.location = "/mhlib/onlinebooks"
+}
+
 document.getElementById('reservebook').onclick = function() {
     window.open("https://mhms.sccs.opalsinfo.net/bin/home", '_blank');
 }
