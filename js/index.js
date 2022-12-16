@@ -25,7 +25,7 @@ document.getElementById('menutoggle').onclick = function() {
 }
 
 document.getElementById('home').onclick = function() {
-    window.location.replace("/mhlib/");
+    window.location.href("/mhlib/");
 }
 
 document.getElementById('mhhomepage').onclick = function() {
@@ -33,7 +33,7 @@ document.getElementById('mhhomepage').onclick = function() {
 }
 
 document.getElementById('opals').onclick = function() {
-    window.location.replace("/mhlib/opals/");
+    window.location.href("/mhlib/opals/");
 }
 
 document.getElementById('reservebook').onclick = function() {
