@@ -1,5 +1,10 @@
 var menu = document.getElementById('nav');
 
+var isChromium = !!window.chrome;
+if (!isChromium) {
+    document.getElementById('browserwarning').style.display = "block";
+}
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
