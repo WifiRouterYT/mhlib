@@ -30,3 +30,15 @@ document.getElementById('mhhomepage').onclick = function() {
 document.getElementById('opals').onclick = function() {
     window.location.replace("/mhlib/opals/");
 }
+
+document.getElementById('reservebook').onclick = function() {
+    window.open("https://mhms.sccs.opalsinfo.net/bin/home", '_blank');
+}
+
+document.getElementById('lexile').onclick = function() {
+    window.open("https://hub.lexile.com/find-a-book/book-results", '_blank');
+}
+
+document.getElementById('rc').onclick = function() {
+    window.open("https://readingcountsbookexpert.tgds.hmhco.com/bookexpert/search_results_quickfind.asp?UID=&subt=0&mode=new&criteria=&type=Title&x=49&y=20", '_blank');
+}
