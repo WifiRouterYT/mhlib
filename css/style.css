@@ -357,11 +357,6 @@ hr {
     border-color: #ff3e3e;
     box-shadow: 0 0 10px #ff3e3e;
     display: none;
-    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;      /* TWEENER - IE 10 */
-    display: -webkit-flex;     /* NEW - Chrome */
-    display: -moz-box;         /* NEW - Firefox */
 }
 
 .browserwarning .icon {
