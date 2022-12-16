@@ -2,7 +2,7 @@ var menu = document.getElementById('nav');
 
 var isChromium = !!window.chrome;
 if (!isChromium) {
-    document.getElementById('browserwarning').style.display = "block";
+    document.getElementById('browserwarning').style.display = "flex";
 }
 
 function sleep(ms) {

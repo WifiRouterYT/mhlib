@@ -349,7 +349,6 @@ hr {
     top: 0;
     float: right;
     font-family: fixedsys;
-    display: flex;
     border: 2px solid;
     background-color: #0d1117;
     border-radius: 12px;
@@ -362,6 +361,7 @@ hr {
     display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
     display: -ms-flexbox;      /* TWEENER - IE 10 */
     display: -webkit-flex;     /* NEW - Chrome */
+    display: -moz-box;         /* NEW - Firefox */
 }
 
 .browserwarning .icon {
