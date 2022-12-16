@@ -372,7 +372,7 @@ hr {
     margin-bottom: 12px;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 750px) {
     .opalsdescription {
         display: block;
     }
