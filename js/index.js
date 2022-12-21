@@ -20,6 +20,20 @@ async function togglemenu() {
     }
 }
 
+$(document).ready(function () {
+    showSpinnerWhileiFrameLoads();
+});
+
+function showSpinnerWhileiFrameLoads() {
+    var iframe = $('iframe');
+    if (iframe.length) {
+        $(iframe).before('<div id=\'spinner\' style=\'font-size: 8px;\'><i class=\'fa fa-circle-notch fa-spin fa-3x fa-fw\'></i></div>');
+        $(iframe).on('load', function() {
+            document.getElementById('spinner').style.display='none';
+        });
+    }
+}
+
 document.getElementById('ebookimg').onclick = async function() {
     document.getElementById('enlargeimg').style.display = "flex";
     await sleep(100);
