@@ -42,28 +42,6 @@ function showSpinnerWhileiFrameLoads() {
     }
 }
 
-try {
-    var ebookimg = document.getElementById('ebookimg');
-    ebookimg.onclick = async function() {
-    if ( null != ebookimg ) {ebookimg = "No value! Are you on the right page?"; return;}
-    document.getElementById('enlargeimg').style.display = "flex";
-    await sleep(100);
-    document.getElementById('enlargeimg').style.opacity = "1";
-    }
-} catch {
-    console.log("Found an invalid element, skipping over it.")
-}
-
-try {
-    document.getElementById('enlargeimg').onclick = async function() {
-        document.getElementById('enlargeimg').style.opacity = "0";
-        await sleep(300);
-        document.getElementById('enlargeimg').style.display = "none";
-    }
-} catch {
-    console.log("Found an invalid element, skipping over it.")
-}
-
 /*
  *
  *  MENU LISTENERS
@@ -93,6 +71,15 @@ document.getElementById('onlinebooks').onclick = function() {
 
 // END MENU LISTENERS
 
+/*
+ * FAQ
+ * Q: Why are all of the listeners in try/catch statements?
+ * A: So that JavaScript doesn't get angry at me and stop the entire script if there's an element missing, which happens often because this single script is used across
+ *    every page of this website. It's not profressional, but it works
+ * 
+ * End FAQ
+*/
+
 try {
     document.getElementById('reservebook').onclick = function() {
         window.open("https://mhms.sccs.opalsinfo.net/bin/home", '_blank');
@@ -115,4 +102,26 @@ try {
     }
 } catch {
     console.log("Found an invalid element, skipping over it.");
+}
+
+try {
+    var ebookimg = document.getElementById('ebookimg');
+    ebookimg.onclick = async function() {
+    if ( null != ebookimg ) {ebookimg = "No value! Are you on the right page?"; return;}
+    document.getElementById('enlargeimg').style.display = "flex";
+    await sleep(100);
+    document.getElementById('enlargeimg').style.opacity = "1";
+    }
+} catch {
+    console.log("Found an invalid element, skipping over it.")
+}
+
+try {
+    document.getElementById('enlargeimg').onclick = async function() {
+        document.getElementById('enlargeimg').style.opacity = "0";
+        await sleep(300);
+        document.getElementById('enlargeimg').style.display = "none";
+    }
+} catch {
+    console.log("Found an invalid element, skipping over it.")
 }
