@@ -85,7 +85,7 @@ try {
         window.open("https://mhms.sccs.opalsinfo.net/bin/home", '_blank');
     }
 } catch {
-    console.log("Found an invalid element, skipping over it.");
+    console.log("%cFound a missing element, skipping over it.", "color: red;");
 }
 
 try {
@@ -93,7 +93,7 @@ try {
         window.open("https://hub.lexile.com/find-a-book/book-results", '_blank');
     }
 } catch {
-    console.log("Found an invalid element, skipping over it.");
+    console.log("%cFound a missing element, skipping over it.", "color: red;");
 }
 
 try {
@@ -101,7 +101,7 @@ try {
         window.open("https://readingcountsbookexpert.tgds.hmhco.com/bookexpert/search_results_quickfind.asp?UID=&subt=0&mode=new&criteria=&type=Title&x=49&y=20", '_blank');
     }
 } catch {
-    console.log("Found an invalid element, skipping over it.");
+    console.log("%cFound a missing element, skipping over it.", "color: red;");
 }
 
 try {
@@ -113,7 +113,7 @@ try {
     document.getElementById('enlargeimg').style.opacity = "1";
     }
 } catch {
-    console.log("Found an invalid element, skipping over it.")
+    console.log("%cFound a missing element, skipping over it.", "color: red;")
 }
 
 try {
@@ -123,5 +123,9 @@ try {
         document.getElementById('enlargeimg').style.display = "none";
     }
 } catch {
-    console.log("Found an invalid element, skipping over it.")
+    console.log("%cFound a missing element, skipping over it.", "color: red;")
 }
+
+
+// some log stuff to make this seem professional and cool lmao
+console.log("%cInitialization complete. ✅", "color: lime;")
