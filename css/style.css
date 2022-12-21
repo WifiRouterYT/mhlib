@@ -377,3 +377,12 @@ hr {
         display: block;
     }
 }
+
+.flexbox {
+    display: flex;
+}
+
+.flexbox * {
+    margin: 0;
+    padding: 0;
+}

@@ -20,6 +20,18 @@ async function togglemenu() {
     }
 }
 
+document.getElementById('ebookimg').onclick = async function() {
+    document.getElementById('enlargeimg').style.display = "flex";
+    await sleep(100);
+    document.getElementById('enlargeimg').style.opacity = "1";
+}
+
+document.getElementById('enlargeimg').onclick = async function() {
+    document.getElementById('enlargeimg').style.opacity = "0";
+    await sleep(300);
+    document.getElementById('enlargeimg').style.display = "none";
+}
+
 document.getElementById('menutoggle').onclick = function() {
     togglemenu();
 }
