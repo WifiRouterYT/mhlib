@@ -37,7 +37,7 @@ function showSpinnerWhileiFrameLoads() {
     if (iframe.length) {
         $(iframe).before('<div id=\'spinner\' style=\'font-size: 8px;\'><i class=\'fa fa-circle-notch fa-spin fa-3x fa-fw\'></i></div>');
         $(iframe).on('load', function() {
-            document.getElementById('spinner').style.display='none';
+            document.getElementById('spinner').style.display= 'none';
         });
     }
 }
@@ -107,10 +107,9 @@ try {
 try {
     var ebookimg = document.getElementById('ebookimg');
     ebookimg.onclick = async function() {
-    if ( null != ebookimg ) {ebookimg = "No value! Are you on the right page?"; return;}
-    document.getElementById('enlargeimg').style.display = "flex";
-    await sleep(100);
-    document.getElementById('enlargeimg').style.opacity = "1";
+        document.getElementById('enlargeimg').style.display = "flex";
+        await sleep(100);
+        document.getElementById('enlargeimg').style.opacity = "1";
     }
 } catch {
     console.log("%cFound a missing element, skipping over it.", "color: red;")
@@ -124,6 +123,14 @@ try {
     }
 } catch {
     console.log("%cFound a missing element, skipping over it.", "color: red;")
+}
+
+try {
+    document.getElementById('libby').onclick = function() {
+        window.open("https://www.overdrive.com/apps/libby");
+    }
+} catch {
+
 }
 
 

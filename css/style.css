@@ -386,3 +386,20 @@ hr {
     margin: 0;
     padding: 0;
 }
+
+.applink {
+    border: 2px solid; border-color: #bfbfbf; border-radius: 12px; width: 350px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.applink * {
+    margin: 0;
+}
+
+.applink .banner {
+    height: 100px;
+    width: 100%;
+    background-size: cover;
+    background-position: top -18px right;
+}
