@@ -69,6 +69,10 @@ document.getElementById('onlinebooks').onclick = function() {
     window.location = "/mhlib/onlinebooks"
 }
 
+document.getElementById('readingcounts').onclick = function() {
+    window.location = "/mhlib/readingcounts";
+}
+
 // END MENU LISTENERS
 
 /*
