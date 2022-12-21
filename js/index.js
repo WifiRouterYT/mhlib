@@ -1,3 +1,10 @@
+/*
+ * MHLib Script written by WifiRouter
+ * 12/2022
+ *
+ * yes it sucks but it works (for the most part) so im keeping it
+*/
+
 var menu = document.getElementById('nav');
 
 var isChromium = !!window.chrome;
@@ -35,17 +42,34 @@ function showSpinnerWhileiFrameLoads() {
     }
 }
 
-document.getElementById('ebookimg').onclick = async function() {
+try {
+    var ebookimg = document.getElementById('ebookimg');
+    ebookimg.onclick = async function() {
+    if ( null != ebookimg ) {ebookimg = "No value! Are you on the right page?"; return;}
     document.getElementById('enlargeimg').style.display = "flex";
     await sleep(100);
     document.getElementById('enlargeimg').style.opacity = "1";
+    }
+} catch {
+    console.log("Found an invalid element, skipping over it.")
 }
 
-document.getElementById('enlargeimg').onclick = async function() {
-    document.getElementById('enlargeimg').style.opacity = "0";
-    await sleep(300);
-    document.getElementById('enlargeimg').style.display = "none";
+try {
+    document.getElementById('enlargeimg').onclick = async function() {
+        document.getElementById('enlargeimg').style.opacity = "0";
+        await sleep(300);
+        document.getElementById('enlargeimg').style.display = "none";
+    }
+} catch {
+    console.log("Found an invalid element, skipping over it.")
 }
+
+/*
+ *
+ *  MENU LISTENERS
+ *  PLACE ANY OTHER EVENTS UNDER IT (preferably in try/catch statements. not the best way but it works.)
+ * 
+*/
 
 document.getElementById('menutoggle').onclick = function() {
     togglemenu();
@@ -67,14 +91,28 @@ document.getElementById('onlinebooks').onclick = function() {
     window.location = "/mhlib/onlinebooks"
 }
 
-document.getElementById('reservebook').onclick = function() {
-    window.open("https://mhms.sccs.opalsinfo.net/bin/home", '_blank');
+// END MENU LISTENERS
+
+try {
+    document.getElementById('reservebook').onclick = function() {
+        window.open("https://mhms.sccs.opalsinfo.net/bin/home", '_blank');
+    }
+} catch {
+    console.log("Found an invalid element, skipping over it.");
 }
 
-document.getElementById('lexile').onclick = function() {
-    window.open("https://hub.lexile.com/find-a-book/book-results", '_blank');
+try {
+    document.getElementById('lexile').onclick = function() {
+        window.open("https://hub.lexile.com/find-a-book/book-results", '_blank');
+    }
+} catch {
+    console.log("Found an invalid element, skipping over it.");
 }
 
-document.getElementById('rc').onclick = function() {
-    window.open("https://readingcountsbookexpert.tgds.hmhco.com/bookexpert/search_results_quickfind.asp?UID=&subt=0&mode=new&criteria=&type=Title&x=49&y=20", '_blank');
+try {
+    document.getElementById('rc').onclick = function() {
+        window.open("https://readingcountsbookexpert.tgds.hmhco.com/bookexpert/search_results_quickfind.asp?UID=&subt=0&mode=new&criteria=&type=Title&x=49&y=20", '_blank');
+    }
+} catch {
+    console.log("Found an invalid element, skipping over it.");
 }
