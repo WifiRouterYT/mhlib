@@ -403,3 +403,13 @@ hr {
     background-size: cover;
     background-position: top -18px right;
 }
+
+.nomargin * {
+    margin: 0;
+}
+
+.nomargin .divide {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 18px;
+}
